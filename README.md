@@ -1,11 +1,11 @@
-# Overview
+> For Logseq-DB only.
 
-Describe your plugin.
+# Overview
+Generate a crazy amount of data in Logseq for testing purposes.
 
 # Usage
-
-How to use your plugin.
+1. Set the total number of pages, blocks and paragraphs per block you want to create.
+2. Trigger command palette (Mod+Shift+P) and use the command `/Crazy Big Data: Start generating`
 
 # Installation
-
-Recommend to install from the marketplace. If not, download a release and manually load it in Logseq.
+Download a release and manually load it in Logseq.
