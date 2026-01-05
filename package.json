@@ -1,11 +1,11 @@
 {
-  "name": "<insert-plugin-name>",
+  "name": "logseq-crazybigdata-plugin",
   "author": "benjypng",
-  "description": "",
+  "description": "Create massive amounts of fake data for testing.",
   "license": "MIT",
   "logseq": {
-    "id": "<insert-plugin-name>",
-    "title": "<insert-plugin-name>",
+    "id": "logseq-crazybigdata-plugin",
+    "title": "logseq-crazybigdata-plugin",
     "icon": "./icon.svg",
     "main": "dist/index.html"
   },
@@ -25,16 +25,15 @@
         "@semantic-release/github",
         {
           "assets": [
-            "<insert-plugin-name>.zip"
+            "logseq-crazybigdata-plugin.zip"
           ]
         }
       ]
     ]
   },
   "dependencies": {
-    "@logseq/libs": "^0.2.8",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "@faker-js/faker": "^10.2.0",
+    "@logseq/libs": "^0.2.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",

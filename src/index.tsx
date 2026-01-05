@@ -1,16 +1,17 @@
 import '@logseq/libs'
 
-import { handlePopup } from './handle-popup'
+import { generateCrazyBigData } from './generate-crazy-big-data'
 import { settings } from './settings'
 
 const main = async () => {
-  console.log('<insert-plugin-name> loaded')
+  logseq.UI.showMsg('logseq-crazybigdata-plugin loaded')
 
-  // Used to handle any popups
-  handlePopup()
-
-  // Check if plugin is being used on the DB version
-  const isDbGraph = await logseq.App.checkCurrentIsDbGraph()
+  logseq.App.registerCommandPalette(
+    { key: 'crazybigdata', label: 'Crazy Big Data: Start generating' },
+    async () => {
+      await generateCrazyBigData()
+    },
+  )
 }
 
 logseq.useSettingsSchema(settings).ready(main).catch(console.error)
